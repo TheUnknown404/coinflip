@@ -3,26 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CoinFlip</title>
+    <link rel="stylesheet" href="coinflip.css" />
+    <title>Coinflip</title>
   </head>
   <body>
-    <p id="text">Heads or Tails?</p>
-    <button type="btn" id="heads">Tails</button>
-    <button type="btn" id="tails">Heads</button>
-    <p id ="text2">Computer Picked:</p>
+    <div class="container">
+      <p id="text">Heads or Tails?</p>
+      <p id="text2"></p>
+      <button type="btn" id="heads">Heads</button>
+      <button type="btn" id="tails">Tails</button>
+      <h1 id="heading">Will You Win or Lose?</h1>
 
-    <div class="info">
-      <span>Wins</span>
-      <p id="wins">0</p>
+      <div class="info">
+        <span>Wins</span>
+        <p class="score"id="wins">0</p>
+      </div>
+
+      <div class="info">
+        <span>Losses</span>
+        <p class="score" id="losses">0</p>
+      </div>
+
+      <button type="btn" id="reset">Reset Scores</button>
     </div>
-
-    <div class ="info">
-    <span>Losses</span>
-      <p id="losses">0</p>
-    </div>
-
-    <button type="btn" id="reset">Reset Scores</button>
-
     <script src="coinflip.js"></script>
   </body>
 </html>

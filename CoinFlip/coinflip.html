@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="coinflip.css" />
     <title>Coinflip</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <p id="text">Heads or Tails?</p>
-      <p id="text2"></p>
-      <button type="btn" id="heads">Heads</button>
-      <button type="btn" id="tails">Tails</button>
-      <h1 id="heading">Will You Win or Lose?</h1>
+        <!-- Game Title -->
+        <h1 class="heading">Will You Win or Lose?</h1>
 
-      <div class="info">
-        <span>Wins</span>
-        <p class="score"id="wins">0</p>
-      </div>
+        <!-- Game Interface -->
+        <p class="text">Heads or Tails?</p>
+        <p class="text2"></p>
 
-      <div class="info">
-        <span>Losses</span>
-        <p class="score" id="losses">0</p>
-      </div>
+        <!-- Coin Buttons -->
+        <button class="btn heads">Heads</button>
+        <button class="btn tails">Tails</button>
 
-      <button type="btn" id="reset">Reset Scores</button>
+        <!-- Score Display -->
+        <div class="info">
+            <span>Wins</span>
+            <p class="score wins">0</p>
+        </div>
+
+        <div class="info">
+            <span>Losses</span>
+            <p class="score losses">0</p>
+        </div>
+
+        <!-- Reset Button -->
+        <button type="btn" class="reset">Reset Scores</button>
     </div>
+
+    <!-- JavaScript -->
     <script src="coinflip.js"></script>
-  </body>
+</body>
+
 </html>
